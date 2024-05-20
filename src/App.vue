@@ -7,7 +7,15 @@
       <div class="main_list_borders borders_four"></div>
       <HeaderComponent />
 
-      <ErrorComponent></ErrorComponent>
+      <BannerComponent></BannerComponent>
+      <ProjectTextComponent />
+      <SliderComponent2 />
+
+      <!--BannerIntroComponent />
+      <ProjectsPaginationComponent /-->
+
+      <!--ErrorComponent></!--ErrorComponent-->
+
       <!--BannerIntroComponentStyle />
       <ColorComponent />
       <TypographyComponent />
@@ -35,7 +43,7 @@
 import HeaderComponent from "./components/HeaderComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
 
-import ErrorComponent from "./components/Page404Component/ErrorComponent.vue";
+//import ErrorComponent from "./components/Page404Component/ErrorComponent.vue";
 
 //import BannerComponent from "./components/PageThree/BannerComponent.vue";
 //import BlogComponent from "./components/PageThree/BlogComponent.vue";
@@ -55,6 +63,13 @@ import ErrorComponent from "./components/Page404Component/ErrorComponent.vue";
 //import ButtonsComponent from "./components/PageFour/ButtonsComponent.vue";
 //import IconsComponent from "./components/PageFour/IconsComponent.vue";
 //import QuotesComponent from "./components/PageFour/QuotesComponent.vue";
+
+//import BannerIntroComponent from "./components/PageProject/BannerIntroComponent.vue";
+//import ProjectsPaginationComponent from "./components/PageProject/ProjectsPaginationComponent.vue";
+
+import BannerComponent from "./components/ProjectDetailsComponent/BannerComponent.vue";
+import ProjectTextComponent from "./components/ProjectDetailsComponent/ProjectTextComponent.vue";
+import SliderComponent2 from "./components/ProjectDetailsComponent/SliderComponent2.vue";
 
 export default {
   name: "App",
@@ -78,7 +93,14 @@ export default {
     //IconsComponent,
     // QuotesComponent,
 
-    ErrorComponent,
+    //ErrorComponent,
+
+    // BannerIntroComponent,
+    //  ProjectsPaginationComponent,
+
+    BannerComponent,
+    ProjectTextComponent,
+    SliderComponent2,
   },
 };
 </script>

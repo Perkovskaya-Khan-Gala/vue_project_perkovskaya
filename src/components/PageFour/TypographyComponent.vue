@@ -259,7 +259,7 @@ ol {
 }
 
 ol li:before {
-  content: counter(num) ".";
+  content: counter(num);
   counter-increment: num;
   display: inline-block;
   position: absolute;
