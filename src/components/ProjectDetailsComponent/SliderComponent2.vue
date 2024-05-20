@@ -10,6 +10,7 @@
           <img :src="activeSlide.image" />
         </div>
       </div>
+      <img class="slider_zoom" src="/images/ZoomIcon.svg" alt="" />
     </div>
     <div class="controls">
       <input type="radio" name="pagination" value="0" @click="checked(0)" />
@@ -55,6 +56,7 @@ export default {
 .slider-container {
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 .slider {
   display: flex;
@@ -62,6 +64,13 @@ export default {
 }
 .slider img {
   width: 100%;
+}
+.slider_zoom {
+  position: absolute;
+  z-index: 20;
+  left: 870px;
+  top: 320px;
+  cursor: pointer;
 }
 .controls {
   display: flex;
