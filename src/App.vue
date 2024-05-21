@@ -7,12 +7,12 @@
       <div class="main_list_borders borders_four"></div>
       <HeaderComponent />
 
-      <BannerComponent></BannerComponent>
+      <!--BannerComponent></!--BannerComponent>
       <ProjectTextComponent />
-      <SliderComponent2 />
+      <SliderComponent2 /-->
 
-      <!--BannerIntroComponent />
-      <ProjectsPaginationComponent /-->
+      <BannerIntroComponent />
+      <ProjectsPaginationComponent />
 
       <!--ErrorComponent></!--ErrorComponent-->
 
@@ -64,18 +64,19 @@ import FooterComponent from "./components/FooterComponent.vue";
 //import IconsComponent from "./components/PageFour/IconsComponent.vue";
 //import QuotesComponent from "./components/PageFour/QuotesComponent.vue";
 
-//import BannerIntroComponent from "./components/PageProject/BannerIntroComponent.vue";
-//import ProjectsPaginationComponent from "./components/PageProject/ProjectsPaginationComponent.vue";
+import BannerIntroComponent from "./components/PageProject2/BannerIntroComponent.vue";
+import ProjectsPaginationComponent from "./components/PageProject2/ProjectsPaginationComponent.vue";
 
-import BannerComponent from "./components/ProjectDetailsComponent/BannerComponent.vue";
-import ProjectTextComponent from "./components/ProjectDetailsComponent/ProjectTextComponent.vue";
-import SliderComponent2 from "./components/ProjectDetailsComponent/SliderComponent2.vue";
+//import BannerComponent from "./components/ProjectDetailsComponent/BannerComponent.vue";
+//import ProjectTextComponent from "./components/ProjectDetailsComponent/ProjectTextComponent.vue";
+//import SliderComponent2 from "./components/ProjectDetailsComponent/SliderComponent2.vue";
 
 export default {
   name: "App",
   components: {
     HeaderComponent,
     FooterComponent,
+
     //BannerComponent,
     //BlogComponent,
     // BannerIntroComponent,
@@ -95,12 +96,12 @@ export default {
 
     //ErrorComponent,
 
-    // BannerIntroComponent,
-    //  ProjectsPaginationComponent,
+    BannerIntroComponent,
+    ProjectsPaginationComponent,
 
-    BannerComponent,
-    ProjectTextComponent,
-    SliderComponent2,
+    //BannerComponent,
+    //ProjectTextComponent,
+    //SliderComponent2,
   },
 };
 </script>
