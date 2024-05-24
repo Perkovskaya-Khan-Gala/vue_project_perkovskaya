@@ -41,6 +41,7 @@
 
 <script>
 import ItemProjectsComponent from "@/components/PageProject2/ItemProjectsComponent.vue";
+import { mapActions, mapMutations, mapGetters } from "vuex";
 
 export default {
   name: "ProjectsPaginationComponent",
@@ -48,75 +49,21 @@ export default {
   data() {
     return {
       name: "",
-      projects: [
-        {
-          image: "/images/ImageP1.svg",
-          addInfo: "Minimal Bedroom",
-          path: "Decor / Artchitecture",
-          tag: "Bedroom",
-          like: true,
-        },
-        {
-          image: "/images/ImageP3.svg",
-          addInfo: "Minimal Bedroom",
-          path: "Decor / Artchitecture",
-          tag: "Bedroom",
-          like: false,
-        },
-        {
-          image: "/images/ImageP5.svg",
-          addInfo: "Classic Minimal Bedroom",
-          path: "Decor / Artchitecture",
-          tag: "Bedroom",
-          like: true,
-        },
-        {
-          image: "/images/ImageP7.svg",
-          addInfo: "Modern Bedroom",
-          path: "Decor / Artchitecture",
-          tag: "Bedroom",
-          like: false,
-        },
-        {
-          image: "/images/ImageP2.svg",
-          addInfo: "Minimal Bedroom table",
-          path: "Decor / Artchitecture",
-          tag: "Bedroom",
-          like: false,
-        },
-        {
-          image: "/images/ImageP4.svg",
-          addInfo: "System Table",
-          path: "Decor / Artchitecture",
-          tag: "Bedroom",
-          like: false,
-        },
-        {
-          image: "/images/ImageP6.svg",
-          addInfo: "Modern Medroom",
-          path: "Decor / Artchitecture",
-          tag: "Bedroom",
-          like: false,
-        },
-        {
-          image: "/images/ImageP8.svg",
-          addInfo: "Modern Medroom",
-          path: "Decor / Artchitecture",
-          tag: "Bedroom",
-          like: false,
-        },
-      ],
     };
   },
   computed: {
     filtered() {
       if (this.name) {
-        return this.projects.filter((item) => item.tag === this.name);
-      } else return this.projects;
+        return this.projectsItem.filter((item) => item.tag === this.name);
+      } else return this.projectsItem;
     },
+    ...mapActions(["dataF"]),
+    ...mapGetters(["projectsItem"]),
   },
 
-  mounted() {},
+  mounted() {
+    this.SET_PROJECTS(this.dataF());
+  },
 
   methods: {
     newLike(data) {
@@ -125,6 +72,7 @@ export default {
         findLike.like = data.like;
       }
     },
+    ...mapMutations(["SET_PROJECTS"]),
   },
 };
 </script>
