@@ -67,12 +67,9 @@ export default {
 
   methods: {
     newLike(data) {
-      const findLike = this.projects.find((item) => item === data.project);
-      if (findLike) {
-        findLike.like = data.like;
-      }
+      this.CHANGE_LIKE(data);
     },
-    ...mapMutations(["SET_PROJECTS"]),
+    ...mapMutations(["SET_PROJECTS", "CHANGE_LIKE"]),
   },
 };
 </script>

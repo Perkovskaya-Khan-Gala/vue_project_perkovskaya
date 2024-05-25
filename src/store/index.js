@@ -10,6 +10,12 @@ export default new Vuex.Store({
         SET_PROJECTS(state, projectList) {
             state.projects = projectList;
         },
+        CHANGE_LIKE(state, data) {
+            const findLike = state.projects.find((item) => item === data.project);
+            if (findLike) {
+                findLike.like = data.like;
+            }
+        },
     },
     actions: {
         dataF({ commit }) {
