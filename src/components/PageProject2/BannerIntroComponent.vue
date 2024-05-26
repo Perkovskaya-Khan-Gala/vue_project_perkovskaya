@@ -3,7 +3,10 @@
     <img class="articlesNews_img" src="/images/PhotoBigOP.svg" alt="photo" />
     <div class="articlesNews_intro">
       <h1 class="articlesNews_title">Our Project</h1>
-      <h4 class="articlesNews_text">Home / Project</h4>
+      <h4 class="articlesNews_text">
+        <router-link to="home" class="articlesNews_text"> Home</router-link> /
+        <router-link to="projects" class="articlesNews_text"> Project</router-link>
+      </h4>
     </div>
   </div>
 </template>

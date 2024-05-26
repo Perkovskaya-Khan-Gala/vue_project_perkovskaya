@@ -6,9 +6,10 @@
       <p class="box_text">
         There are many variations of the passages of lorem Ipsum fromavailable, majority.
       </p>
-      <button class="box_button">
-        Get Started <img src="/images/Vector.svg" alt="" />
-      </button>
+      <router-link to="404">
+        <button class="box_button">
+          Get Started <img src="/images/Vector.svg" alt="" /></button
+      ></router-link>
     </div>
   </div>
 </template>

@@ -2,8 +2,10 @@
   <footer class="footer center">
     <div class="footer_logo">
       <div class="header_left">
-        <a href="#"><img src="/images/Logo.svg" width="34px" alt="Logo" /></a>
-        <a href="#" class="footer_name">Interno</a>
+        <router-link to="home"><img src="/images/Logo.svg" alt="Logo" /></router-link>
+        <router-link to="home">
+          <div href="#" class="footer_name">Interno</div></router-link
+        >
       </div>
       <div class="footer_text">
         It is a long established fact that a reader will be distracted lookings.
@@ -37,9 +39,9 @@
     </div>
     <div class="footer_nav">
       <div class="footer_title">Pages</div>
-      <div class="footer_page">Home</div>
-      <div class="footer_page">Project</div>
-      <div class="footer_page">Blog</div>
+      <router-link to="home"> <div class="footer_page">Home</div></router-link>
+      <router-link to="projects"><div class="footer_page">Project</div></router-link>
+      <router-link to="blog"><div class="footer_page">Blog</div></router-link>
     </div>
     <div class="footer_contact">
       <div class="footer_title footer_gap">Contact</div>

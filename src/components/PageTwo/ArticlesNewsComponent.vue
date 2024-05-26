@@ -1,6 +1,6 @@
 <template>
   <div class="articles center">
-    <h1 class="articles_title">Articles & News</h1>
+    <router-link to="blog"> <h1 class="articles_title">Articles & News</h1></router-link>
     <div class="articles_box">
       <div class="articles_item" v-for="item in articles" :key="item.id">
         <img :src="item.image" alt="image" class="articles_img" />
@@ -8,46 +8,49 @@
         <div class="articles_info">{{ item.info }}</div>
         <div class="articles_data">
           <div class="articles_year">{{ item.dateInfo }}</div>
+          <router-link to="blogdetails">
+            <svg
+              width="52"
+              height="53"
+              viewBox="0 0 52 53"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
+              <path
+                d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813"
+                stroke="#292F36"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+          ></router-link>
+        </div>
+      </div>
+    </div>
+    <div class="pagination center">
+      <button class="pagination_button">01</button>
+      <router-link to="404"><button class="pagination_button">02</button></router-link>
+      <router-link to="404"><button class="pagination_button">03</button></router-link>
+      <router-link to="404">
+        <button class="pagination_button">
           <svg
-            width="52"
-            height="53"
-            viewBox="0 0 52 53"
+            width="9"
+            height="16"
+            viewBox="0 0 9 16"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
             <path
-              d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813"
+              d="M1.55714 15L7.5 8.31429L1.55714 1.62857"
               stroke="#292F36"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
           </svg>
-        </div>
-      </div>
-    </div>
-    <div class="pagination center">
-      <button class="pagination_button">01</button>
-      <button class="pagination_button">02</button>
-      <button class="pagination_button">03</button>
-      <button class="pagination_button">
-        <svg
-          width="9"
-          height="16"
-          viewBox="0 0 9 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.55714 15L7.5 8.31429L1.55714 1.62857"
-            stroke="#292F36"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </button>
+        </button>
+      </router-link>
     </div>
   </div>
 </template>

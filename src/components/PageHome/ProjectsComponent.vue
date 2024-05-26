@@ -1,6 +1,8 @@
 <template>
   <div class="projects center">
-    <h1 class="projects_title">Follow Our Projects</h1>
+    <router-link to="projects">
+      <h1 class="projects_title">Follow Our Projects</h1></router-link
+    >
     <p class="projects_text">
       It is a long established fact that a reader will be distracted by the of readable
       content of page lookings at its layouts points
@@ -13,7 +15,9 @@
             <h3 class="projects_item_title">Modern Kitchen</h3>
             <p class="projects_item_text">Decor / Artchitecture</p>
           </div>
-          <img class="projects_arrow" src="/images/Ellipse.svg" alt="arrow" />
+          <router-link to="projectdetails">
+            <img class="projects_arrow" src="/images/Ellipse.svg" alt="arrow" />
+          </router-link>
         </div>
       </div>
       <div class="projects_item">
@@ -23,7 +27,9 @@
             <h3 class="projects_item_title">Modern Kitchen</h3>
             <p class="projects_item_text">Decor / Artchitecture</p>
           </div>
-          <img class="projects_arrow" src="/images/Ellipse.svg" alt="arrow" />
+          <router-link to="projectdetails"
+            ><img class="projects_arrow" src="/images/Ellipse.svg" alt="arrow"
+          /></router-link>
         </div>
       </div>
       <div class="projects_item up">
@@ -33,7 +39,9 @@
             <h3 class="projects_item_title">Modern Kitchen</h3>
             <p class="projects_item_text">Decor / Artchitecture</p>
           </div>
-          <img class="projects_arrow" src="/images/Ellipse.svg" alt="arrow" />
+          <router-link to="projectdetails"
+            ><img class="projects_arrow" src="/images/Ellipse.svg" alt="arrow"
+          /></router-link>
         </div>
       </div>
       <div class="projects_item up">
@@ -43,7 +51,9 @@
             <h3 class="projects_item_title">Modern Kitchen</h3>
             <p class="projects_item_text">Decor / Artchitecture</p>
           </div>
-          <img class="projects_arrow" src="/images/Ellipse.svg" alt="arrow" />
+          <router-link to="projectdetails"
+            ><img class="projects_arrow" src="/images/Ellipse.svg" alt="arrow"
+          /></router-link>
         </div>
       </div>
     </div>

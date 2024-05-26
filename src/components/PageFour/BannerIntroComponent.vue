@@ -3,7 +3,9 @@
     <img class="articlesNews_img" src="/images/BannerStyle.svg" alt="photo" />
     <div class="articlesNews_intro">
       <h1 class="articlesNews_title">Style Guid</h1>
-      <h4 class="articlesNews_text">Home / Styleguid</h4>
+      <h4 class="articlesNews_text">
+        <router-link to="home" class="articlesNews_text">Home </router-link>/ Styleguid
+      </h4>
     </div>
   </div>
 </template>

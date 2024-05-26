@@ -3,7 +3,10 @@
     <img class="articlesNews_img" src="/images/PhotoBigAN.svg" alt="photo" />
     <div class="articlesNews_intro">
       <h1 class="articlesNews_title">Articles & News</h1>
-      <h4 class="articlesNews_text">Home / Blog</h4>
+      <h4 class="articlesNews_text">
+        <router-link to="home" class="articlesNews_text">Home</router-link> /
+        <router-link to="blog" class="articlesNews_text">Blog</router-link>
+      </h4>
     </div>
   </div>
 </template>

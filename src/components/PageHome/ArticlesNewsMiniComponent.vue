@@ -1,8 +1,8 @@
 <template>
   <div class="articles center">
-    <a href="#">
+    <router-link to="blog">
       <h1 class="articles_title">Articles & News</h1>
-    </a>
+    </router-link>
     <p class="articles_text">
       It is a long established fact that a reader will be distracted by the of readable
       content of a page when lookings at its layouts the points of using.
